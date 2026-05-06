@@ -547,20 +547,50 @@
       max-width: 1200px;
       margin: auto;
     }
-    .footer-logo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;          /* Igual que el header */
-  font-size: 48px;           /* Más grande para el footer */
-  letter-spacing: 1px;
-  color: #E46727;
-  text-transform: uppercase;
-  text-align: center;
+    /* LOGO DEL FOOTER ESTILO MANUAL DE MARCA (BLOQUE NARANJA) */
+.footer-logo-block {
+  display: flex;
+  justify-content: center;
   margin-bottom: 40px;
-  text-shadow:
-    0 0 8px rgba(228,103,39,0.6),
-    0 0 16px rgba(228,103,39,0.4),
-    0 0 32px rgba(228,103,39,0.3);
 }
+
+.footer-logo-block span {
+  background: #E46727;                 /* Naranja oficial */
+  color: white;                        /* Texto blanco */
+  padding: 14px 32px;                  /* Bloque ancho */
+  border-radius: 12px;                 /* Bordes suaves */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;                    /* Igual que el header */
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.6),
+    0 0 16px rgba(255,255,255,0.4);
+  box-shadow:
+    0 0 20px rgba(228,103,39,0.6),
+    0 0 40px rgba(228,103,39,0.4),
+    0 0 60px rgba(228,103,39,0.3);
+  transition: 0.3s ease;
+}
+
+/* Efecto hover futurista */
+.footer-logo-block span:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 30px rgba(228,103,39,0.8),
+    0 0 60px rgba(228,103,39,0.6),
+    0 0 90px rgba(228,103,39,0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-logo-block span {
+    font-size: 32px;
+    padding: 12px 24px;
+  }
+}
+
 
     .footer-grid {
       display: grid;
