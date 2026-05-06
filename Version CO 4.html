@@ -126,14 +126,29 @@
       padding: 14px 40px;
       gap: 16px;
     }
-    .logo {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 30px;
-      font-weight: 700;
-      color: var(--orange1);
-      letter-spacing: 1px;
-      text-shadow: var(--neon);
-    }
+    /* LOGO HEADER ESTILO MANUAL DE MARCA */
+.logo-smartket {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;          /* Más grueso, como el logo oficial */
+  font-size: 42px;           /* Mucho más grande */
+  letter-spacing: 1px;
+  color: #E46727;            /* Naranja oficial */
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  text-shadow:
+    0 0 6px rgba(228,103,39,0.4),
+    0 0 12px rgba(228,103,39,0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .logo-smartket {
+    font-size: 32px;
+  }
+}
+
     .logo span { display: inline-block; }
 
     .search-bar { flex: 1; max-width: 380px; }
