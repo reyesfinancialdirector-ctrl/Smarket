@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smartket | Celulares y tecnología en Cali – Compra inteligente</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Compra celulares, audio y electrodomésticos en Cali. Envíos rápidos, garantía y precios reales. Smartket: tu compra inteligente.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smartket.online/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Smartket | Celulares y tecnología en Cali – Compra inteligente">
+  <meta property="og:description" content="Celulares, audio y electrodomésticos en Cali con precios reales, garantía y envíos rápidos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smartket.online/">
+  <meta property="og:image" content="https://smartket.online/og-image-smartket.jpg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smartket | Celulares y tecnología en Cali – Compra inteligente">
+  <meta name="twitter:description" content="Compra inteligente en tecnología: celulares, audio y electrodomésticos en Cali.">
+  <meta name="twitter:image" content="https://smartket.online/og-image-smartket.jpg">
+
+  <!-- Tipografías oficiales -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD LocalBusiness + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://smartket.online/#localbusiness",
+        "name": "Smartket",
+        "image": "https://smartket.online/logo-smartket.png",
+        "url": "https://smartket.online/",
+        "telephone": "+57-312-889-6496",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle 26 Norte #4N-36, San Vicente",
+          "addressLocality": "Cali",
+          "addressRegion": "Valle del Cauca",
+          "addressCountry": "CO"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:30",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://smartket.online/#website",
+        "url": "https://smartket.online/",
+        "name": "Smartket",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://smartket.online/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --orange1: #E46727;
+      --orange2: #E87C2B;
+      --orange3: #E88D2C;
+      --orange4: #E9932C;
+      --black: #1A1A1A;
+      --white: #FFFFFF;
+      --bg: #f5f5f5;
+      --text: #1A1A1A;
+      --card-bg: #ffffff;
+      --radius: 18px;
+      --glass: rgba(255,255,255,0.15);
+      --blur: blur(12px);
+      --shadow: 0 8px 30px rgba(0,0,0,0.15);
+      --neon: 0 0 12px rgba(232,124,43,0.8);
+    }
+    body.dark {
+      --bg: #050608;
+      --text: #f5f5f5;
+      --card-bg: #111318;
+      --glass: rgba(10,10,15,0.6);
+      --shadow: 0 0 30px rgba(228,103,39,0.4);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      overflow-x: hidden;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.7);
+      box-shadow: var(--shadow);
+    }
+    body.dark header { background: rgba(5,6,8,0.85); }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 40px;
+      gap: 16px;
+    }
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--orange1);
+      letter-spacing: 1px;
+      text-shadow: var(--neon);
+    }
+    .logo span { display: inline-block; }
+
+    .search-bar { flex: 1; max-width: 380px; }
+    .search-bar input {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: var(--radius);
+      border: 1px solid #ddd;
+      font-size: 15px;
+      transition: 0.3s;
+      background: var(--card-bg);
+      color: var(--text);
+    }
+    .search-bar input:focus {
+      border-color: var(--orange2);
+      box-shadow: 0 0 12px rgba(232,124,43,0.4);
+      outline: none;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .header-actions a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .header-actions a:hover {
+      color: var(--orange1);
+      transform: translateY(-2px);
+    }
+
+    .theme-toggle {
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 6px 14px;
+      border: 1px solid rgba(255,255,255,0.4);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.2);
+    }
+    body.dark .theme-toggle { background: rgba(0,0,0,0.4); }
+
+    .mobile-menu-btn {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      color: var(--text);
+    }
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: -260px;
+      width: 260px;
+      height: 100%;
+      background: var(--card-bg);
+      padding: 20px;
+      transition: 0.35s ease;
+      z-index: 2000;
+      box-shadow: var(--shadow);
+    }
+    .mobile-menu.open { left: 0; }
+    .mobile-menu a {
+      display: block;
+      padding: 14px 0;
+      font-size: 16px;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid #3333;
+    }
+    .mobile-menu a:hover { color: var(--orange1); }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0 14px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #777;
+      font-weight: 600;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    body.dark nav a { color: #aaa; }
+    nav a:hover {
+      color: var(--orange1);
+      transform: translateY(-2px);
+    }
+
+    /* HERO / CARRUSEL */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 80px 20px 90px;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      border-radius: 26px;
+      padding: 40px 24px;
+      background: radial-gradient(circle at top left, rgba(255,255,255,0.2), transparent),
+                  linear-gradient(135deg, var(--orange1), var(--orange3));
+      color: white;
+      position: relative;
+      box-shadow: var(--shadow);
+    }
+    body.dark .hero-inner {
+      background: radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent),
+                  linear-gradient(135deg, #1A1A1A, #E46727);
+    }
+    .hero-slides { position: relative; min-height: 190px; }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transform: translateX(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .hero-slide.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .hero-slide h1 {
+      font-size: 34px;
+      margin: 0 0 10px;
+    }
+    .hero-slide p {
+      font-size: 16px;
+      max-width: 520px;
+    }
+    .hero-cta {
+      margin-top: 24px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      padding: 12px 24px;
+      border-radius: 999px;
+      border: none;
+      background: var(--white);
+      color: var(--orange1);
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px) scale(1.03);
+      background: var(--orange4);
+      color: white;
+    }
+    .btn-ghost {
+      padding: 12px 24px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.7);
+      background: transparent;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.15); }
+    .hero-dots {
+      position: absolute;
+      bottom: 18px;
+      right: 24px;
+      display: flex;
+      gap: 6px;
+    }
+    .hero-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero-dot.active {
+      width: 18px;
+      background: white;
+    }
+
+    /* SECCIONES */
+    .section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+    .section-sub {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+    body.dark .section-sub { color: #aaa; }
+
+    /* CATEGORÍAS */
+    .categorias-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+    .categoria-card {
+      padding: 26px 20px;
+      background: var(--glass);
+      backdrop-filter: var(--blur);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.3);
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.4s;
+      cursor: pointer;
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    body.dark .categoria-card { border-color: rgba(255,255,255,0.08); }
+    .categoria-card span {
+      display: block;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    .categoria-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: var(--shadow);
+    }
+
+    /* PRODUCTOS */
+    .productos-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 22px;
+      margin-top: 30px;
+    }
+    .producto-card {
+      background: var(--card-bg);
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid #ddd;
+      text-align: left;
+      transition: 0.35s;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    }
+    body.dark .producto-card { border-color: #333; }
+    .producto-img-wrapper {
+      width: 100%;
+      height: 190px;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+    }
+    .producto-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s;
+      display: block;
+    }
+    .producto-card:hover .producto-img-wrapper img {
+      transform: scale(1.05);
+    }
+    .producto-card .tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--orange2);
+      color: white;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .producto-card h3 {
+      margin: 14px 0 4px;
+      font-size: 16px;
+    }
+    .producto-card p {
+      margin: 0;
+      font-size: 13px;
+      color: #777;
+    }
+    body.dark .producto-card p { color: #aaa; }
+    .precio {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--orange1);
+    }
+    .producto-actions {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn-mini {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: none;
+      background: var(--orange1);
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-mini:hover {
+      transform: translateY(-2px);
+      background: var(--orange3);
+    }
+
+    /* BLOQUE EDITORIAL SEO */
+    .editorial {
+      margin-top: 40px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+    body.dark .editorial { color: #ccc; }
+
+    /* BENEFICIOS */
+    .beneficios-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+    .beneficio {
+      background: var(--card-bg);
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid #ddd;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    body.dark .beneficio { border-color: #333; }
+    .beneficio span {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+    .beneficio:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    /* FOOTER FUTURISTA COMPLETO */
+    .footer-futurista {
+      position: relative;
+      background: #050608;
+      padding: 80px 20px 40px;
+      overflow: hidden;
+      color: #fff;
+      margin-top: 40px;
+    }
+    #particles-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .tron-line {
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(90deg, transparent, #E46727, transparent);
+      opacity: 0.4;
+      animation: tron-move 6s linear infinite;
+      z-index: 2;
+    }
+    .tl-1 { top: 20%; }
+    .tl-2 { top: 50%; animation-delay: 2s; }
+    .tl-3 { top: 80%; animation-delay: 4s; }
+    @keyframes tron-move {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(100%); }
+    }
+    .footer-container {
+      position: relative;
+      z-index: 3;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .footer-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #E46727;
+      text-shadow:
+        0 0 10px rgba(228,103,39,0.9),
+        0 0 20px rgba(228,103,39,0.7),
+        0 0 40px rgba(228,103,39,0.5);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 30px;
+    }
+    .footer-col h4 {
+      color: #E9932C;
+      margin-bottom: 12px;
+      text-shadow: 0 0 8px rgba(233,147,44,0.6);
+    }
+    .footer-col a, .footer-col p {
+      display: block;
+      color: #ccc;
+      font-size: 14px;
+      margin-bottom: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .footer-col a:hover {
+      color: #E87C2B;
+      transform: translateX(4px);
+    }
+    .footer-form input,
+    .footer-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: none;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 13px;
+    }
+    .footer-form textarea {
+      min-height: 70px;
+      resize: vertical;
+    }
+    .footer-form button {
+      width: 100%;
+      padding: 10px;
+      background: #E46727;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+    .footer-form button:hover {
+      background: #E87C2B;
+      transform: translateY(-2px);
+    }
+    .footer-bottom {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+    }
+
+    /* BOTÓN WHATSAPP */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      width: 62px;
+      height: 62px;
+      background: #25D366;
+      border-radius: 50%;
+      box-shadow: 0 0 18px rgba(0,0,0,0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      transition: 0.3s;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 22px rgba(37,211,102,0.8);
+    }
+    .whatsapp-btn img {
+      width: 34px;
+      height: 34px;
+    }
+
+    /* SCROLL ANIMATIONS */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .categorias-grid,
+      .productos-grid,
+      .beneficios-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+    @media (max-width: 800px) {
+      nav { display: none; }
+      .mobile-menu-btn { display: block; }
+      .header-top { padding: 12px 16px; }
+    }
+    @media (max-width: 640px) {
+      .categorias-grid,
+      .productos-grid,
+      .beneficios-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-inner {
+        padding: 30px 18px 40px;
+      }
+      .hero-slide h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo">
+        <span>SMARTKET®</span>
+      </div>
+
+      <div class="search-bar">
+        <input type="search" placeholder="Buscar productos (celulares, audio, electrodomésticos)...">
+      </div>
+
+      <div class="header-actions">
+        <div class="theme-toggle" id="themeToggle">
+          <span>🌞</span><span>/</span><span>🌙</span>
+        </div>
+        <a href="#">Mi cuenta</a>
+        <a href="#">Carrito (0)</a>
+        <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Celulares</a>
+      <a href="#">Audio</a>
+      <a href="#">Cabinas</a>
+      <a href="#">Accesorios</a>
+      <a href="#">Ofertas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="menu-header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <h3>Menú</h3>
+      <span class="close-btn" onclick="toggleMenu()" style="cursor:pointer;font-size:20px;">✕</span>
+    </div>
+    <a href="#">Inicio</a>
+    <a href="#">Celulares</a>
+    <a href="#">Audio</a>
+    <a href="#">Cabinas</a>
+    <a href="#">Accesorios</a>
+    <a href="#">Ofertas</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <!-- HERO con H1 SEO -->
+  <section class="hero">
+    <div class="hero-inner reveal">
+      <div class="hero-slides" id="heroSlides">
+        <div class="hero-slide active">
+          <h1>Celulares, audio y tecnología en Cali</h1>
+          <p>La tecnología que quieres, al precio que necesitas. Celulares, audio y electrodomésticos con garantía y soporte cercano en Cali.</p>
+        </div>
+        <div class="hero-slide">
+          <h1>Compra inteligente, precios reales</h1>
+          <p>Encuentra celulares, televisores y electrodomésticos en Cali con precios competitivos, envíos rápidos y respaldo Smartket.</p>
+        </div>
+        <div class="hero-slide">
+          <h1>Sonido y potencia para tus eventos</h1>
+          <p>Cabinas, parlantes y audio profesional para tus reuniones, negocios y celebraciones en el Valle del Cauca.</p>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#productos" class="btn-primary">Ver productos</a>
+        <button class="btn-ghost">Hablar con un asesor</button>
+      </div>
+
+      <div class="hero-dots" id="heroDots">
+        <div class="hero-dot active" data-index="0"></div>
+        <div class="hero-dot" data-index="1"></div>
+        <div class="hero-dot" data-index="2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="section categorias">
+    <h2 class="reveal">Categorías destacadas</h2>
+    <p class="section-sub reveal">Explora lo mejor de nuestra tecnología seleccionada para ti.</p>
+
+    <div class="categorias-grid">
+      <div class="categoria-card reveal"><span>📱</span>Celulares</div>
+      <div class="categoria-card reveal"><span>🔊</span>Audio</div>
+      <div class="categoria-card reveal"><span>📦</span>Cabinas</div>
+      <div class="categoria-card reveal"><span>🎧</span>Accesorios</div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="section productos">
+    <h2 class="reveal">Productos destacados</h2>
+    <p class="section-sub reveal">Equipos listos para entregar, con garantía y respaldo Smartket.</p>
+
+    <div class="productos-grid">
+      <article class="producto-card reveal">
+        <div class="producto-img-wrapper">
+          <img src="https://via.placeholder.com/400x300?text=Samsung+Galaxy+A17" alt="Celular Samsung Galaxy A17 - Smartket">
+        </div>
+        <span class="tag">Nuevo</span>
+        <h3>Samsung Galaxy A17</h3>
+        <p>Rendimiento sólido, batería confiable y cámara para tu día a día.</p>
+        <div class="precio">$XXX.XXX</div>
+        <div class="producto-actions">
+          <button class="btn-mini">Agregar al carrito</button>
+          <span style="font-size:12px;color:#999;">Envío rápido</span>
+        </div>
+      </article>
+
+      <article class="producto-card reveal">
+        <div class="producto-img-wrapper">
+          <img src="https://via.placeholder.com/400x300?text=Infinix+Note+60+Pro+5G" alt="Celular Infinix Note 60 Pro 5G - Smartket">
+        </div>
+        <span class="tag">5G</span>
+        <h3>Infinix Note 60 Pro 5G</h3>
+        <p>Pantalla amplia, conectividad 5G y potencia para multitarea.</p>
+        <div class="precio">$XXX.XXX</div>
+        <div class="producto-actions">
+          <button class="btn-mini">Agregar al carrito</button>
+          <span style="font-size:12px;color:#999;">Garantía incluida</span>
+        </div>
+      </article>
+
+      <article class="producto-card reveal">
+        <div class="producto-img-wrapper">
+          <img src="https://via.placeholder.com/400x300?text=ZTE+Blade+A56" alt="Celular ZTE Blade A56 - Smartket">
+        </div>
+        <span class="tag">Oferta</span>
+        <h3>ZTE Blade A56</h3>
+        <p>Una opción accesible para estar siempre conectado.</p>
+        <div class="precio">$XXX.XXX</div>
+        <div class="producto-actions">
+          <button class="btn-mini">Agregar al carrito</button>
+          <span style="font-size:12px;color:#999;">Stock limitado</span>
+        </div>
+      </article>
+
+      <article class="producto-card reveal">
+        <div class="producto-img-wrapper">
+          <img src="https://via.placeholder.com/400x300?text=Cabina+Niatec+8x2+NT+PB26" alt="Cabina de sonido Niatec 8x2 NT PB26 - Smartket">
+        </div>
+        <span class="tag">Potencia</span>
+        <h3>Cabina Niatec 8x2 NT PB26</h3>
+        <p>Sonido potente para tus eventos, reuniones y celebraciones.</p>
+        <div class="precio">$XXX.XXX</div>
+        <div class="producto-actions">
+          <button class="btn-mini">Agregar al carrito</button>
+          <span style="font-size:12px;color:#999;">Ideal para eventos</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- Bloque editorial SEO -->
+    <div class="editorial reveal">
+      <p>
+        En Smartket encuentras una selección de <strong>celulares en Cali</strong>, equipos de audio y
+        <strong>electrodomésticos para el hogar</strong> pensados para hacer tu compra más inteligente.
+        Trabajamos con marcas reconocidas y productos con garantía para que puedas elegir con confianza.
+      </p>
+      <p>
+        Si buscas <strong>electrodomésticos en el Valle del Cauca</strong>, cabinas de sonido para eventos o
+        simplemente renovar tu celular, Smartket es una alternativa local frente a grandes marketplaces.
+        Nuestro enfoque está en ofrecer precios reales, atención cercana y soporte desde Cali.
+      </p>
+      <p>
+        Explora nuestras categorías, compara modelos y realiza tu compra en línea con envíos rápidos.
+        Tu próxima compra inteligente en tecnología empieza aquí.
+      </p>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section beneficios">
+    <h2 class="reveal">¿Por qué elegir Smartket?</h2>
+    <p class="section-sub reveal">Tu compra inteligente, respaldada por un equipo real.</p>
+
+    <div class="beneficios-grid">
+      <div class="beneficio reveal"><span>🚚</span>Envíos rápidos y seguros</div>
+      <div class="beneficio reveal"><span>🛡</span>Garantía real en todos los productos</div>
+      <div class="beneficio reveal"><span>📍</span>Soporte desde Cali</div>
+      <div class="beneficio reveal"><span>💳</span>Pagos 100% seguros</div>
+    </div>
+  </section>
+
+  <!-- FOOTER FUTURISTA COMPLETO -->
+  <footer class="footer-futurista" id="contacto">
+    <canvas id="particles-canvas"></canvas>
+    <div class="tron-line tl-1"></div>
+    <div class="tron-line tl-2"></div>
+    <div class="tron-line tl-3"></div>
+
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span>SMARTKET®</span>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Smartket</h4>
+          <p>Tu compra inteligente en tecnología. Celulares, audio y electrodomésticos con garantía y soporte desde Cali.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Enlaces</h4>
+          <a href="#">Inicio</a>
+          <a href="#">Celulares</a>
+          <a href="#">Audio</a>
+          <a href="#">Cabinas</a>
+          <a href="#">Accesorios</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ubicación</h4>
+          <iframe 
+            src="https://www.google.com/maps?q=Calle+26+Norte+4N-36+Cali&output=embed"
+            width="100%" height="160" style="border:0;border-radius:12px;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contáctanos</h4>
+          <form class="footer-form" onsubmit="event.preventDefault(); alert('Gracias por escribirnos, pronto te contactaremos.');">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 SMARTKET® – Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/573128896496?text=Hola%20Smartket!%20Quiero%20más%20información%20sobre%20sus%20productos%20📱✨"
+     class="whatsapp-btn" target="_blank" aria-label="WhatsApp Smartket">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Smartket">
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("open");
+    }
+
+    // Dark mode automático + toggle
+    (function() {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDark) document.body.classList.add('dark');
+    })();
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    function handleReveal() {
+      const trigger = window.innerHeight * 0.85;
+      reveals.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < trigger) el.classList.add('visible');
+      });
+    }
+    window.addEventListener('scroll', handleReveal);
+    window.addEventListener('load', handleReveal);
+
+    // Hero carrusel
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    let currentSlide = 0;
+    function showSlide(i) {
+      slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+      dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+      currentSlide = i;
+    }
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const idx = parseInt(dot.getAttribute('data-index'), 10);
+        showSlide(idx);
+      });
+    });
+    setInterval(() => {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }, 6000);
+
+    // Partículas footer
+    const canvas = document.getElementById("particles-canvas");
+    const ctx = canvas.getContext("2d");
+
+    function resizeCanvas() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    let particles = [];
+    for (let i = 0; i < 80; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 2 + 1,
+        speedX: (Math.random() - 0.5) * 0.6,
+        speedY: (Math.random() - 0.5) * 0.6
+      });
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.x += p.speedX;
+        p.y += p.speedY;
+
+        if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+
+        ctx.fillStyle = "rgba(228,103,39,0.8)";
+        ctx.shadowBlur = 12;
+        ctx.shadowColor = "#E46727";
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+  </script>
+</body>
+</html>
